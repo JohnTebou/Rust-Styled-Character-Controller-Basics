@@ -24,6 +24,8 @@ public class DynamicCrosshair : MonoBehaviour
     private bool throww;
     [Space(5)]
     [SerializeField] private float crosshairShiftSpeed;
+    [SerializeField] private float throwShiftSpeed;
+    private float shiftSpeed;
 
     private void Awake()
     {
@@ -57,11 +59,13 @@ public class DynamicCrosshair : MonoBehaviour
         }
         if (throww) { targetDistance = throwDistance;  }
 
+        shiftSpeed = throww ? throwShiftSpeed : crosshairShiftSpeed;
+
         // handle interpolation of crosshairs
-        hairs[0].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[0].rectTransform.anchoredPosition, new Vector2(-targetDistance + correctionX, 0), crosshairShiftSpeed * Time.deltaTime);
-        hairs[1].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[1].rectTransform.anchoredPosition, new Vector2(targetDistance + correctionX, 0), crosshairShiftSpeed * Time.deltaTime);
-        hairs[2].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[2].rectTransform.anchoredPosition, new Vector2(0, -targetDistance + correctionY), crosshairShiftSpeed * Time.deltaTime);
-        hairs[3].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[3].rectTransform.anchoredPosition, new Vector2(0, targetDistance + correctionY), crosshairShiftSpeed * Time.deltaTime);
+        hairs[0].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[0].rectTransform.anchoredPosition, new Vector2(-targetDistance + correctionX, 0), shiftSpeed * Time.deltaTime);
+        hairs[1].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[1].rectTransform.anchoredPosition, new Vector2(targetDistance + correctionX, 0), shiftSpeed * Time.deltaTime);
+        hairs[2].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[2].rectTransform.anchoredPosition, new Vector2(0, -targetDistance + correctionY), shiftSpeed * Time.deltaTime);
+        hairs[3].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[3].rectTransform.anchoredPosition, new Vector2(0, targetDistance + correctionY), shiftSpeed * Time.deltaTime);
 
         // toggle T-crosshair
         hairs[3].gameObject.SetActive(Input.GetKeyDown(KeyCode.T) ? !hairs[3].gameObject.activeSelf : hairs[3].gameObject.activeSelf); 
