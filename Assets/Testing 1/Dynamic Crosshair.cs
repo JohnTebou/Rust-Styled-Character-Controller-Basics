@@ -10,7 +10,7 @@ public class DynamicCrosshair : MonoBehaviour
     private float state;
 
     [Header("UI Elements")]
-    [SerializeField] private List<Image> hairs = new List<Image>();
+    [SerializeField] private List<Image> hairs = new List<Image>(4);
 
     [Header("Dynamism Parameters")]
     [SerializeField] private float minDistance;
