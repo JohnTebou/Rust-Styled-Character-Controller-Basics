@@ -183,7 +183,7 @@ MonoBehaviour:
       ChromaticAberrationMaxSamples: 03000000060000000c000000
     lightSettings:
       useContactShadow:
-        m_Values: 000101
+        m_Values: 000001
         m_SchemaId:
           m_Id: 
     maximumLODLevel:
@@ -198,7 +198,7 @@ MonoBehaviour:
       m_SchemaId:
         m_Id: With3Levels
     lightingQualitySettings:
-      AOStepCount: 040000000600000010000000
+      AOStepCount: 040000000600000020000000
       AOFullRes: 000001
       AOMaximumRadiusPixels: 200000002800000050000000
       AOBilateralUpsample: 000101
@@ -217,7 +217,7 @@ MonoBehaviour:
       - 0.5
       - 3
       - 20
-      RTAOSampleCount: 010000000200000008000000
+      RTAOSampleCount: 010000000200000040000000
       RTAODenoise: 010101
       RTAODenoiserRadius:
       - 0.25
