@@ -13,10 +13,15 @@ public class DynamicCrosshair : MonoBehaviour
     [SerializeField] private List<Image> hairs = new List<Image>(4);
 
     [Header("Dynamism Parameters")]
+    [SerializeField] private float throwDistance;
     [SerializeField] private float minDistance;
     [SerializeField] private float midDistance;
     [SerializeField] private float maxDistance;
+    [Space(5)]
+    [SerializeField] private float correctionX;
+    [SerializeField] private float correctionY;
     private float targetDistance;
+    private bool throww;
     [Space(5)]
     [SerializeField] private float crosshairShiftSpeed;
 
@@ -34,26 +39,29 @@ public class DynamicCrosshair : MonoBehaviour
         // get state which will be used to determine crosshair distance
         state = anyValidAnimator.GetInteger("state");
 
+        throww = anyValidAnimator.GetBool("throw");
 
-        // handle target crosshair offset based on state (closest for idle, intermediate for walking, farthest for running)
+
+        // handle target crosshair offset based on state (closest for idle, intermediate for walking, farthest for running, custom for spear throw)
         switch (state)
         {
             case 0:
-                targetDistance = minDistance;
+                if (!throww) { targetDistance = minDistance; }
                 break;
             case 1:
-                targetDistance = midDistance;
+                if (!throww) { targetDistance = midDistance; }
                 break;
             case 2:
-                targetDistance = maxDistance;
+                if (!throww) { targetDistance = maxDistance; }
                 break;
         }
+        if (throww) { targetDistance = throwDistance;  }
 
         // handle interpolation of crosshairs
-        hairs[0].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[0].rectTransform.anchoredPosition, new Vector2(-targetDistance, 0), crosshairShiftSpeed * Time.deltaTime);
-        hairs[1].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[1].rectTransform.anchoredPosition, new Vector2(targetDistance, 0), crosshairShiftSpeed * Time.deltaTime);
-        hairs[2].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[2].rectTransform.anchoredPosition, new Vector2(0, -targetDistance), crosshairShiftSpeed * Time.deltaTime);
-        hairs[3].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[3].rectTransform.anchoredPosition, new Vector2(0, targetDistance), crosshairShiftSpeed * Time.deltaTime);
+        hairs[0].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[0].rectTransform.anchoredPosition, new Vector2(-targetDistance + correctionX, 0), crosshairShiftSpeed * Time.deltaTime);
+        hairs[1].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[1].rectTransform.anchoredPosition, new Vector2(targetDistance + correctionX, 0), crosshairShiftSpeed * Time.deltaTime);
+        hairs[2].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[2].rectTransform.anchoredPosition, new Vector2(0, -targetDistance + correctionY), crosshairShiftSpeed * Time.deltaTime);
+        hairs[3].rectTransform.anchoredPosition = Vector2.MoveTowards(hairs[3].rectTransform.anchoredPosition, new Vector2(0, targetDistance + correctionY), crosshairShiftSpeed * Time.deltaTime);
 
         // toggle T-crosshair
         hairs[3].gameObject.SetActive(Input.GetKeyDown(KeyCode.T) ? !hairs[3].gameObject.activeSelf : hairs[3].gameObject.activeSelf); 
