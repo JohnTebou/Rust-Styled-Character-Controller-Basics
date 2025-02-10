@@ -72,8 +72,8 @@ public class SimpleMotion : MonoBehaviour
 
     private void HandleRotation()
     {
-        xRot += ih.LookInput.y * ySens;
-        yRot += ih.LookInput.x * xSens;
+        xRot += ih.LookInput.y * ySens * Time.deltaTime;
+        yRot += ih.LookInput.x * xSens * Time.deltaTime;
 
         xRot = Mathf.Clamp(xRot, minLook, maxLook);
 

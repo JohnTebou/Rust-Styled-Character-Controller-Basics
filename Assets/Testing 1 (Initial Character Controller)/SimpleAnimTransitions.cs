@@ -11,7 +11,7 @@ public class SimpleAnimTransitions : MonoBehaviour
     private PlayerInputHandler ih;
 
     [Header("FOV Controls")]
-    [SerializeField] private Camera camera;
+    [SerializeField] private Camera cam;
     private float targetFOV;
     [SerializeField] private float baseFOV;
     [SerializeField] private float throwFOV;
@@ -43,7 +43,7 @@ public class SimpleAnimTransitions : MonoBehaviour
         }
 
         (throww, targetFOV) = ih.ThrowValue != 0 ? (true, throwFOV) : (false, baseFOV);
-        camera.fieldOfView = Mathf.MoveTowards(camera.fieldOfView, targetFOV, FOVChangeSpeed * Time.deltaTime);
+        cam.fieldOfView = Mathf.MoveTowards(cam.fieldOfView, targetFOV, FOVChangeSpeed * Time.deltaTime);
 
         // set state
         foreach(Animator i in animators)
