@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class SimpleAnimTransitions : MonoBehaviour
 {
+    [Header("Animation Controls")]
     [SerializeField] private List<Animator> animators = new List<Animator>();
     private int state;
     private bool throww;
     private PlayerInputHandler ih;
+
+    [Header("FOV Controls")]
+    [SerializeField] private Camera camera;
+    private float targetFOV;
+    [SerializeField] private float baseFOV;
+    [SerializeField] private float throwFOV;
+    [SerializeField] private float FOVChangeSpeed;
 
     void Start()
     {
@@ -34,7 +42,8 @@ public class SimpleAnimTransitions : MonoBehaviour
             state = 0;
         }
 
-        throww = ih.ThrowValue != 0 ? true : false;
+        (throww, targetFOV) = ih.ThrowValue != 0 ? (true, throwFOV) : (false, baseFOV);
+        camera.fieldOfView = Mathf.MoveTowards(camera.fieldOfView, targetFOV, FOVChangeSpeed * Time.deltaTime);
 
         // set state
         foreach(Animator i in animators)
