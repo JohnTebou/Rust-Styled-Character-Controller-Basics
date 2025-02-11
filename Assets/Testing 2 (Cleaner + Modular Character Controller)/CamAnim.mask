@@ -23,8 +23,6 @@ AvatarMask:
     m_Weight: 1
   - m_Path: Player/CamFree/CamShake/CamAnim/CamAnimSpecific
     m_Weight: 0
-  - m_Path: Player/CamFree/CamShake/CamAnim/CamAnimSpecific/Camera
-    m_Weight: 0
   - m_Path: Player/PlayerFree
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer
@@ -55,6 +53,8 @@ AvatarMask:
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.004/Bone.001_L.011/Bone.001_L.012/Bone.001_L.013
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.004/Bone.001_L.011/Bone.001_L.012/Bone.001_L.013/Bone.001_L.013_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005/Bone.001_L.014
@@ -62,6 +62,8 @@ AvatarMask:
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005/Bone.001_L.014/Bone.001_L.015
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005/Bone.001_L.014/Bone.001_L.015/Bone.001_L.016
+    m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.005/Bone.001_L.014/Bone.001_L.015/Bone.001_L.016/Bone.001_L.016_end
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.006
     m_Weight: 0
@@ -71,6 +73,8 @@ AvatarMask:
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.006/Bone.001_L.017/Bone.001_L.018/Bone.001_L.019
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.006/Bone.001_L.017/Bone.001_L.018/Bone.001_L.019/Bone.001_L.019_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.007
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.007/Bone.001_L.020
@@ -79,11 +83,15 @@ AvatarMask:
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.007/Bone.001_L.020/Bone.001_L.021/Bone.001_L.022
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.007/Bone.001_L.020/Bone.001_L.021/Bone.001_L.022/Bone.001_L.022_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.008
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.008/Bone.001_L.009
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.008/Bone.001_L.009/Bone.001_L.010
+    m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.003/Bone.001_L.008/Bone.001_L.009/Bone.001_L.010/Bone.001_L.010_end
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R
     m_Weight: 0
@@ -101,6 +109,8 @@ AvatarMask:
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.004/Bone.001_R.011/Bone.001_R.012/Bone.001_R.013
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.004/Bone.001_R.011/Bone.001_R.012/Bone.001_R.013/Bone.001_R.013_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005/Bone.001_R.014
@@ -108,6 +118,8 @@ AvatarMask:
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005/Bone.001_R.014/Bone.001_R.015
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005/Bone.001_R.014/Bone.001_R.015/Bone.001_R.016
+    m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.005/Bone.001_R.014/Bone.001_R.015/Bone.001_R.016/Bone.001_R.016_end
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.006
     m_Weight: 0
@@ -117,6 +129,8 @@ AvatarMask:
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.006/Bone.001_R.017/Bone.001_R.018/Bone.001_R.019
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.006/Bone.001_R.017/Bone.001_R.018/Bone.001_R.019/Bone.001_R.019_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.007
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.007/Bone.001_R.020
@@ -125,11 +139,15 @@ AvatarMask:
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.007/Bone.001_R.020/Bone.001_R.021/Bone.001_R.022
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.007/Bone.001_R.020/Bone.001_R.021/Bone.001_R.022/Bone.001_R.022_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.008
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.008/Bone.001_R.009
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.008/Bone.001_R.009/Bone.001_R.010
+    m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.003/Bone.001_R.008/Bone.001_R.009/Bone.001_R.010/Bone.001_R.010_end
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon
     m_Weight: 0
@@ -137,15 +155,34 @@ AvatarMask:
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/b1/b2
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/b1/b2/b2_end
+    m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/Dendre
+      Bow
+    m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/Dendre
+      Bow/Dendre Bow.001
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/f1
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/f1/f2
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/f1/f2/f2_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/misc1
+    m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/misc1/misc1_end
     m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/misc2
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/misc2/misc2_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/t1
     m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/t1/t1_end
+    m_Weight: 0
   - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/Test Spear
+    m_Weight: 0
+  - m_Path: Player/PlayerFree/Swayer/CharMot/CharRot/Armature/Bone/weapon/Weapon
+      Tracker
     m_Weight: 0
