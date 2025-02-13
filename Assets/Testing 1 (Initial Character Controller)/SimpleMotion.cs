@@ -51,6 +51,8 @@ public class SimpleMotion : MonoBehaviour
             ", " + "Move Speed: " + moveSpeed + " | " + "Look Input: " + ih.LookInput + ", "
             + "x Rot: " + xRot);
         HandleRotation();
+
+        grounded = Input.GetKeyDown(KeyCode.G) ? !grounded : grounded;
     }
 
     private void FixedUpdate()
@@ -67,7 +69,7 @@ public class SimpleMotion : MonoBehaviour
         rb.AddForce(moveDir.normalized * moveSpeed * speedMultiplier, ForceMode.Force);
 
 
-        rb.drag = grounded ? groundDrag : airDrag;
+        rb.linearDamping = grounded ? groundDrag : airDrag;
     }
 
     private void HandleRotation()

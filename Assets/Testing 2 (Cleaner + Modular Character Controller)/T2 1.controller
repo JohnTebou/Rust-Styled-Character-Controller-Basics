@@ -64,7 +64,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 2340236314064072694, guid: d996361207a734947b9330508afcdf99,
+  m_Motion: {fileID: -4906596733317601484, guid: d996361207a734947b9330508afcdf99,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -113,7 +113,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -5358424810862730127, guid: d996361207a734947b9330508afcdf99,
+  m_Motion: {fileID: 9201395648376600969, guid: d996361207a734947b9330508afcdf99,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -148,7 +148,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: T2 CA
+  m_Name: T2 1
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:

@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Skin
   m_EditorClassIdentifier: 
   profile:
-    scatteringDistance: {r: 0.99105287, g: 0.90466136, b: 1, a: 1}
-    scatteringDistanceMultiplier: 2.21
-    transmissionTint: {r: 1, g: 0.7436505, b: 0.68235296, a: 1}
+    scatteringDistance: {r: 1, g: 0.7698254, b: 0.63136846, a: 1}
+    scatteringDistanceMultiplier: 3
+    transmissionTint: {r: 1, g: 0.6933962, b: 0.6179246, a: 1}
     texturingMode: 0
+    smoothnessMultipliers: {x: 1, y: 1}
+    lobeMix: 1
+    diffuseShadingPower: 1
     transmissionMode: 0
-    thicknessRemap: {x: 3.6190476, y: 6.7142906}
+    thicknessRemap: {x: 0, y: 3.7544394}
     worldScale: 1
-    ior: 1.723
+    ior: 1.325
     hash: 1079284441
   m_Version: 2

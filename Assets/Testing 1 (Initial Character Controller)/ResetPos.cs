@@ -5,9 +5,11 @@ using UnityEngine;
 public class ResetPos : MonoBehaviour
 {
     private Rigidbody rb;
+    private Vector3 resetPos;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        resetPos = transform.position;
     }
 
     // Update is called once per frame
@@ -15,7 +17,7 @@ public class ResetPos : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            rb.MovePosition(new Vector3(18.372f, 3.92f, 21.80565f));
+            rb.MovePosition(resetPos);
         }
     }
 }
