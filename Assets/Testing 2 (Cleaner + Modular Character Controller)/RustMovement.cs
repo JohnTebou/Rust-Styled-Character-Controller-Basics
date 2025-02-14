@@ -17,6 +17,9 @@ public class RustMovement : MonoBehaviour
     [SerializeField] private float groundDrag;
     [SerializeField] private float airDrag;
     public bool grounded;
+    [Space(5)]
+    [SerializeField] private float jumpForce;
+    private bool jump;
 
     [Header("Rotation Controls")]
     [SerializeField] private float xSens;
@@ -40,6 +43,8 @@ public class RustMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
         ih = GetComponent<PlayerInputHandler>();
+
+        jump = false;
     }
 
     // Update is called once per frame
@@ -49,25 +54,35 @@ public class RustMovement : MonoBehaviour
             ", " + "Move Speed: " + moveSpeed + " | " + "Look Input: " + ih.LookInput + ", "
             + "x Rot: " + xRot);
         HandleRotation();
+        HandleJump();
 
         grounded = Input.GetKeyDown(KeyCode.G) ? !grounded : grounded;
+
+        moveDir = orienter.forward * ih.MoveInput.y + orienter.right * ih.MoveInput.x;
+
+        moveSpeed = ih.SprintValue > 0 && ih.MoveInput.y > 0 ? walkSpeed + ih.SprintValue * (runSpeed - walkSpeed) : walkSpeed;
+        rb.linearDamping = grounded ? groundDrag : airDrag;
+
     }
 
     private void FixedUpdate()
     {
-        HandleMovement();
-    }
-
-    private void HandleMovement()
-    {
-        moveDir = orienter.forward * ih.MoveInput.y + orienter.right * ih.MoveInput.x;
-
-        moveSpeed = ih.SprintValue > 0 && ih.MoveInput.y > 0 ? walkSpeed + ih.SprintValue * (runSpeed - walkSpeed) : walkSpeed;
-
         rb.AddForce(moveDir.normalized * moveSpeed * speedMultiplier, ForceMode.Force);
 
+        if (jump)
+        {
+            jump = false;
+            rb.AddForce(orienter.up * jumpForce, ForceMode.Impulse);
+        }
+    }
 
-        rb.linearDamping = grounded ? groundDrag : airDrag;
+    private void HandleJump()
+    {
+        if (ih.JumpTriggered)
+        {
+            jump = true;
+            ih.JumpTriggered = false;
+        }
     }
 
     private void HandleRotation()
