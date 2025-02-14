@@ -18,6 +18,7 @@ public class ResetPos : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             rb.MovePosition(resetPos);
+            rb.linearVelocity = Vector3.zero;
         }
     }
 }

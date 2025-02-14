@@ -27,7 +27,7 @@
                     "name": "Jump",
                     "type": "Button",
                     "id": "5fcb0cfb-7535-4445-aec9-8b5b9ee56422",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -122,7 +122,7 @@
                     "name": "",
                     "id": "46971f68-8978-45be-87d4-d44f51c40731",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
